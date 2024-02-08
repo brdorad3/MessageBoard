@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tr</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <% for(let i=0; i<message.length;i++){ %>
+      <div style="display: flex; align-items: center; width: 80wv; background-color: rgb(224, 235, 245);">
+        <div>
+          <div style="display: flex; align-items: center;">
+      <%= message[i].user  %>
+      <p>:</p>
+      </div>
+      
+      <%= message[i].text %>
+        </div>
+      <div style="margin-left: 100px;">
+      <%= message[i].added %>
+      </div>
+      </div>
+      <br>
+      <% } %>
+      <a href="/new">Write new message</a>
+  </body>
+</html>
